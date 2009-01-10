@@ -1,6 +1,3 @@
-<script LANGUAGE="JavaScript"><!--
-
-
 var aySound = new Array();
 
 aySound[0] = "sounds/c-sharp.mp3";
@@ -39,5 +36,3 @@ else eval("this.document.embeds[whSound]." + (play? "play()":"stop()"))
 }
 function playSound(whSound) { if (window.auCon) auCon.control(whSound,true); }
 function stopSound(whSound) { if (window.auCon) auCon.control(whSound,false); }
-//-->
-</script>
