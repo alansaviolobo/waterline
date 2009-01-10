@@ -55,7 +55,7 @@ p 	{
 	{
 	float:right;
 	width:600px;
-	margin: -8px 0 0 0;
+	margin: -5px 0 0 0;
 	background-image: url(img/main-cont-back.png);
 	padding:0px;
 	}
@@ -68,11 +68,11 @@ p 	{
 
 .style1 
 	{
-	color: #000000;
+	color: #00000e;
 	font-weight: bold;
 	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	font-size: 42px;
-	letter-spacing:-2px;
+	font-size: 35px;
+	letter-spacing:-3px;
 	}
 	
 #main-logo
@@ -82,17 +82,10 @@ p 	{
 	 width=657px;
 	 height=162px;
 	}
-	
-#music-academy-img
+
+.big-container
 	{
-	 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/music-academy.png');
-	 display:inline-block;
-	 width=657px;
-	 height=162px;
-	}
-	
-#music-academy-div
-	{
-	 float:right;
-	 vertical-align:top;
+	 width: 982px;
+	 margin: 0 10px 10px 0px;
+	 
 	}
