@@ -1,27 +1,20 @@
 @charset "utf-8";
 /* CSS Document */
 
-body { 
+body
+{
 	font: 75% "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	line-height: 1.88889;
-	color: #555753; 
-	margin: 0 50px 0 0; 
+	color: #555753;
+	margin: 0 50px 0 0;
 	padding: 0;
-	}
+}
 
 p 	{ 
 	margin-top: 0; 
 	text-align: justify;
 	}
 
-
-.style2 
-	{
-	color: #FFFFFF;
-	font-weight: bold;
-	font-size: 100%;
-	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}	
 
 .waterline-navigation
 	{
@@ -67,7 +60,7 @@ p 	{
 	}
 
 
-.style1 
+.headingstyle
 	{
 	color: #00000e;
 	font-weight: bold;
@@ -83,7 +76,7 @@ p 	{
 	 
 	}
 	
-	.home-link
+.home-link
 	{
 	 padding-top:38px
 	}
@@ -102,4 +95,3 @@ p 	{
 	{
 	 padding-top:37px
 	}
-	
