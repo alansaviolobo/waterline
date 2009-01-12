@@ -8,46 +8,37 @@
 	</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script language="javascript" src="script.js"></script>
-    
-	<!--[if gt IE 6]>
+	<script language="javascript">
+	 function show(title)
+	 {
+	 	document.getElementById('Home').style.display='none';
+		document.getElementById('About Waterline').style.display='none';
+		document.getElementById('Waterline in Pictures').style.display='none';
+		document.getElementById('Contact Waterline').style.display='none';
+		document.getElementById(title).style.display='block';
+	 }
+	</script>	
+		<!--[if gt IE 6]>
 		<style type="text/css">
-			#main-container
-			{
-				margin: -5px 0 0 0;
-			}
+			#main-container { margin: -5px 0 0 0; }
 		</style>
 	<![endif]-->
 	
 	<!--[if lte IE 6]>
-    	
 		<style type="text/css">
 			.waterline-navigation
 			{
-				background-image: none;
+				background-image: none; padding:0px 0 0 29px;
 				filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/left-navigation.png', sizingMethod='fixed');
-				padding:0px 0 0 29px;
 			}
-			.waterline-home
+			.waterline-home { font-size:smaller; height:5px; }
+			#main-container 
 			{
-				font-size:smaller;
-				height:5px;
-			}
-			#main-container
-			{
-				margin: 0 0 0 0;
-				background-image: none;
+				margin: 0 0 0 0; background-image: none;
 				filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/main-cont-back.png', sizingMethod='scale');
 			}
-			.home-link
-			{
-				padding-top:38px
-			}
-			.about-link
-			{
-				padding-top:35px
-			}
-			
+			.home-link { padding-top:38px; }
+			.about-link { padding-top:35px; }
 		</style>
 	<![endif]-->
 </head>
@@ -68,14 +59,14 @@
 			<tr>
 				<td width="39%" valign="top">
 					<div class="waterline-navigation">
-						<div class="home-link"> <a class="waterline-home" href="#" onmouseover="playSound(3)" onmouseout="stopSound(0)" title="Home" >Home</a> </div>
-						<div class="about-link"> <a class="waterline-home" href="#" onmouseover="playSound(2)" onmouseout="stopSound(0)" title="About Waterline">About Us</a> </div>
-						<div class="pictures-link"> <a class="waterline-home" href="#" onmouseover="playSound(1)" onmouseout="stopSound(0)" title="Waterline in Pictures">Pictures</a> </div>
-						<div class="contact-link"> <a class="waterline-home" href="#" onmouseover="playSound(0)" onmouseout="stopSound(0)" title="Contact Waterline">Contact Us</a> </div>
+						<div class="home-link"> <a class="waterline-home" href="#" onclick="show(this.title)" title="Home" >Home</a> </div>
+						<div class="about-link"> <a class="waterline-home" href="#" onclick="show(this.title)" title="About Waterline">About Us</a> </div>
+						<div class="pictures-link"> <a class="waterline-home" href="#" onclick="show(this.title)" title="Waterline in Pictures">Pictures</a> </div>
+						<div class="contact-link"> <a class="waterline-home" href="#" onclick="show(this.title)" title="Contact Waterline">Contact Us</a> </div>
 					</div>
 				</td>
 				<td width="61%" valign="top">
-					<div style="width:600px;float:right;">
+					<div id="Home" style="width:600px;float:right;">
 						<img src="img/welcome-top.png" alt="" width="600" height="140" />
 						<div id="main-container">
 							<p id="p-pad">
@@ -93,6 +84,45 @@
 						</div>
 						<img src="img/welcome-bot.png" alt="" width="600" height="33" />
 					</div>
+                    
+                    <div id="About Waterline" style="display:none;width:600px;float:right;">
+						<img src="img/welcome-top.png" alt="" width="600" height="140" />
+						<div id="main-container">
+							<p id="p-pad">
+                                                            Waterline, as a music academy, has been teaching music to people of various categories, ages and professions for the last eight years. It began in Bombay (Mumbai) in the year 2000 and still stands strong against all odds and challenges. Today, we have some of the finest teachers teaching at the academy and also boast of some of the finest students who have achieved greater heights in very short spans of time against the physical challenge of age. We always look forward to bigger achievements, as the sky is the limit, they say. We assert that the students we produce are of the finest grade, second to none, when it comes to independent and unique composition.  
+                            
+                            
+                            
+                                       Along with the normal course of teaching, Waterline also teaches teamwork by forming and nurturing student bands who publicly perform at various occasions.
+                            
+                            The founder of Waterline believes that if music is adopted, just as any other subject or hobby, at an early age, the result of the years of learning will be no less than that of any other field of education.
+                            
+                                           Waterline is a registered company based in Pune and operates from Aundh.
+
+							</p>
+						</div>
+						<img src="img/welcome-bot.png" alt="" width="600" height="33" />
+					</div>
+                    
+                    <div id="Waterline in Pictures" style="display:none;width:600px;float:right;">
+						<img src="img/welcome-top.png" alt="" width="600" height="140" />
+						<div id="main-container">
+							<p id="p-pad">
+								Pictures Pictures Pictures Pictures Pictures Pictures Pictures Pictures Pictures Pictures Pictures Pictures Pictures 
+							</p>
+						</div>
+						<img src="img/welcome-bot.png" alt="" width="600" height="33" />
+					</div>
+                    
+                    <div id="Contact Waterline" style="display:none;width:600px;float:right;">
+						<img src="img/welcome-top.png" alt="" width="600" height="140" />
+						<div id="main-container">
+							<p id="p-pad">
+								Contact Contact Contact Contact Contact Contact Contact Contact 
+							</p>
+						</div>
+						<img src="img/welcome-bot.png" alt="" width="600" height="33" />
+					</div>                    
 				</td>
 			</tr>
 		</table>
