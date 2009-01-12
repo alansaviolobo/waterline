@@ -3,93 +3,87 @@
 
 body
 {
-	font: 75% "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	line-height: 1.88889;
-	color: #555753;
-	margin: 0 50px 0 0;
-	padding: 0;
+font: 75% "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+line-height: 1.88889;
+color: #555753;
+margin: 0 50px 0 0;
+padding: 0;
 }
 
-p 	{ 
-	margin-top: 0; 
-	text-align: justify;
-	}
-
-
 .waterline-navigation
-	{
-	background-image:url(img/left-navigation.png);
-	height:320px;
-	margin:20px 0 0 0;
-	padding:0px 0 0 27px;
-	width:345px;
-	}
+{
+background-image:url(img/left-navigation.png);
+height:320px;
+margin:20px 0 0 0;
+padding:0px 0 0 27px;
+width:345px;
+}
 
-#waterline-home
-	{
-  	display: block;
-  	color:#FFFFFF;
-  	font-size:medium;
-  	width:199px;
-  	height:29px;
-  	text-decoration:none;
-  	font-weight:bold;
-  	letter-spacing:1px;
-  	}
+.waterline-home
+{
+display:block;
+color:#FFFFFF;
+font-size:medium;
+width:199px;
+height:29px;
+text-decoration:none;
+font-weight:bold;
+letter-spacing:1px;
+}
 
-#waterline-home:hover
-	{ 
-  	text-decoration: none;
-   	background: #000000 url(img/on-rollover-waterline-key.jpg) repeat-x;
-   	letter-spacing:0px;
-	}
+.waterline-home:hover
+{ 
+text-decoration: none;
+background: #000000 url(img/on-rollover-waterline-key.jpg) repeat-x;
+letter-spacing:0px;
+}
 
 #main-container
-	{
-	width:600px;
-	margin: -5px 0 0 0;
-	background-image: url(img/main-cont-back.png);
-	padding:0px;
-	}
+{
+float:right;
+width:600px;
+margin: -8px 0 -12px 0;
+background-image: url(img/main-cont-back.png);
+padding:0px;
+}
 
 #p-pad
-	{
-	padding:10px;
-	}
-
+{
+padding:10px;
+text-align: justify;
+}
 
 .headingstyle
-	{
-	color: #00000e;
-	font-weight: bold;
-	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	font-size: 35px;
-	letter-spacing:-3px;
-	}
+{
+color: #00000e;
+font-weight: bold;
+font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+font-size: 35px;
+letter-spacing:-3px;
+}
 
 #big-container
-	{
-	 width: 982px;
-	 margin: 0 10px 10px 0px;
-	 
-	}
+{
+width: 982px;
+margin: 0 10px 10px 0px;
+}
 
 .home-link
-	{
-	 padding-top:39px
-	}
-	
+{
+padding-top:39px
+}
+
 .about-link
-	{
-	 padding-top:37px
-	}
+{
+padding-top:37px
+}
 
 .pictures-link
-	{
-	 padding-top:69px
-	}
-	
+{
+padding-top:69px
+}
+
 .contact-link
-	{
-	 padding-top:37px
-	}
+{
+padding-top:37px
+}

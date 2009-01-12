@@ -9,19 +9,64 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script language="javascript" src="script.js"></script>
 
+	<!--[if gt IE 6]>
+		<style type="text/css">
+			#main-container
+			{
+				margin: -5px 0 0 0;
+			}
+		</style>
+	<![endif]-->
+	
 	<!--[if lte IE 6]>
-		<link rel="stylesheet" type="text/css" href="ie6-style.css" />
-       		<script defer type="text/javascript" src="pngfix.js"></script>
+		<style type="text/css">
+			.waterline-navigation
+			{
+				background-image: none;
+				filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/left-navigation.png', sizingMethod='fixed');
+				padding:0px 0 0 29px;
+			}
+			.waterline-home
+			{
+				font-size:smaller;
+				height:5px;
+			}
+			#main-container
+			{
+				margin: 0 0 0 0;
+				background-image: none;
+				filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/main-cont-back.png', sizingMethod='scale');
+			}
+			.home-link
+			{
+				padding-top:38px
+			}
+			.about-link
+			{
+				padding-top:35px
+			}
+			#logo-image
+			{
+				filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/logo-top.png', sizingMethod='scale');
+			}
+			#welcome-top
+			{
+				filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/welcome-top.png', sizingMethod='scale');
+			}
+			#welcome-bottom
+			{
+				filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/welcome-bot.png', sizingMethod='scale');
+			}
+		</style>
 	<![endif]-->
 </head>
-    
-<body background="img/main-back2.jpg">
 
-<div id="big-container" align="left">
+<body background="img/main-back2.jpg">
+	<div id="big-container" align="left">
 		<table width="100%" border="0">
 			<tr>
 				<td width="67%">
-					<img src="img/logo-top.png" alt="Waterline Music Academy" width="657" height="162" />
+					<img id="logo-image" src="img/logo-top.png" alt="Waterline Music Academy" width="657" height="162" />
 				</td>
 				<td width="33%" class="headingstyle">
 					Music Academy, Pune
@@ -29,30 +74,38 @@
 			</tr>
 		</table>
 		<table width="100%" border="0">
-          <tr>
-            <td width="39%" valign="top"><div class="waterline-navigation">
-              <div class="home-link"> <a id="waterline-home" href="#" onmouseover="playSound(3)" onmouseout="stopSound(0)" title="Home" >Home</a> </div>
-              <div class="about-link"> <a id="waterline-home" href="#" onmouseover="playSound(2)" onmouseout="stopSound(0)" title="About Waterline">About Us</a> </div>
-              <div class="pictures-link"> <a id="waterline-home" href="#" onmouseover="playSound(1)" onmouseout="stopSound(0)" title="Waterline in Pictures">Pictures</a> </div>
-              <div class="contact-link"> <a id="waterline-home" href="#" onmouseover="playSound(0)" onmouseout="stopSound(0)" title="Contact Waterline">Contact Us</a> </div>
-            </div></td>
-            <td width="61%" valign="top"><div style="width:600px;float:right;"> <img src="img/welcome-top.png" alt="" width="600" height="140" />
-                  <div id="main-container">
-                    <p id="p-pad"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum risus in metus mollis malesuada. 
-                      Sed elit. Nulla facilisi. Aenean tincidunt consequat lectus. Phasellus posuere, odio vitae semper eleifend, 
-                      metus sem lobortis pede, at pellentesque turpis leo sed nibh. Pellentesque nec libero. Duis iaculis lacus. 
-                      Maecenas leo leo, faucibus non, elementum id, laoreet tristique, massa. Nullam tincidunt, arcu condimentum 
-                      scelerisque vestibulum, dolor lorem porttitor arcu, quis varius orci odio quis nibh. Donec tempor leo id augue. 
-                      Phasellus consequat, neque eget bibendum condimentum, pede nunc pellentesque libero, quis condimentum sem dolor 
-                      et erat. Praesent auctor facilisis felis. Proin pretium, velit placerat dictum fermentum, sapien enim scelerisque 
-                      libero, ut vehicula odio dolor ut eros. Aliquam pellentesque cursus ante. Duis libero tellus, bibendum id, adipiscing 
-                      nec, egestas nec, dui. Sed nisi est, facilisis ut, congue eget, gravida quis, nisl. Ut eros lacus, mollis id, vehicula 
-                      sit amet, interdum at, lectus. Fusce fermentum nisl a nulla. </p>
-                  </div>
-            <img src="img/welcome-bot.png" alt="" width="600" height="33" /> </div></td>
-          </tr>
-        </table>
-		<p>&nbsp;</p>
-</div>
+			<tr>
+				<td width="39%" valign="top">
+					<div class="waterline-navigation">
+						<div class="home-link"> <a class="waterline-home" href="#" onmouseover="playSound(3)" onmouseout="stopSound(0)" title="Home" >Home</a> </div>
+						<div class="about-link"> <a class="waterline-home" href="#" onmouseover="playSound(2)" onmouseout="stopSound(0)" title="About Waterline">About Us</a> </div>
+						<div class="pictures-link"> <a class="waterline-home" href="#" onmouseover="playSound(1)" onmouseout="stopSound(0)" title="Waterline in Pictures">Pictures</a> </div>
+						<div class="contact-link"> <a class="waterline-home" href="#" onmouseover="playSound(0)" onmouseout="stopSound(0)" title="Contact Waterline">Contact Us</a> </div>
+					</div>
+				</td>
+				<td width="61%" valign="top">
+					<div style="width:600px;float:right;">
+						<img id="welcome-top" src="img/welcome-top.png" alt="" width="600" height="140" />
+						<div id="main-container">
+							<p id="p-pad">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum risus in metus mollis malesuada. 
+								Sed elit. Nulla facilisi. Aenean tincidunt consequat lectus. Phasellus posuere, odio vitae semper eleifend, 
+								metus sem lobortis pede, at pellentesque turpis leo sed nibh. Pellentesque nec libero. Duis iaculis lacus. 
+								Maecenas leo leo, faucibus non, elementum id, laoreet tristique, massa. Nullam tincidunt, arcu condimentum 
+								scelerisque vestibulum, dolor lorem porttitor arcu, quis varius orci odio quis nibh. Donec tempor leo id augue. 
+								Phasellus consequat, neque eget bibendum condimentum, pede nunc pellentesque libero, quis condimentum sem dolor 
+								et erat. Praesent auctor facilisis felis. Proin pretium, velit placerat dictum fermentum, sapien enim scelerisque 
+								libero, ut vehicula odio dolor ut eros. Aliquam pellentesque cursus ante. Duis libero tellus, bibendum id, adipiscing 
+								nec, egestas nec, dui. Sed nisi est, facilisis ut, congue eget, gravida quis, nisl. Ut eros lacus, mollis id, vehicula 
+								sit amet, interdum at, lectus. Fusce fermentum nisl a nulla. 
+							</p>
+						</div>
+						<img id="welcome-bottom" src="img/welcome-bot.png" alt="" width="600" height="33" />
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 </body>
 </html>
