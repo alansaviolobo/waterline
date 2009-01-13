@@ -3,9 +3,9 @@
 
 body
 {
-font: 75% "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-line-height: 1.88889;
-color: #555753;
+font: 78% "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+line-height: 1.58889;
+color: #484848;
 margin: 0 50px 0 0;
 padding: 0;
 }
@@ -53,6 +53,13 @@ padding:10px;
 text-align: justify;
 }
 
+#black-text
+{
+ color: #070707;
+ font-style: italic;
+ font-weight:bold;
+}
+
 .headingstyle
 {
 color: #00000e;
@@ -60,6 +67,7 @@ font-weight: bold;
 font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 font-size: 35px;
 letter-spacing:-3px;
+padding-bottom:83px;
 }
 
 #big-container
